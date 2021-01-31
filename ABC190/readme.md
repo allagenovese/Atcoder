@@ -1,26 +1,22 @@
 #### D問題解説？
-まず初項a, 末項l、公差が1の等差数列の和は以下の通りになる。
-![\[
- \frac{1}{2}(l-a+1)(l+a) = N
-\]
-](https://render.githubusercontent.com/render/math?math=%5Cdisplaystyle+%5C%5B%0A+%5Cfrac%7B1%7D%7B2%7D%28l-a%2B1%29%28l%2Ba%29+%3D+n%0A%5C%5D%0A)
+まず初項a, 末項l、公差が1の等差数列の和がNになるとき以下の通りになる。
+
+![\begin{align*}
+\frac{1}{2}(l-a+1)(l+a) = N
+\end{align*}
+](https://render.githubusercontent.com/render/math?math=%5CLarge+%5Cdisplaystyle+%5Cbegin%7Balign%2A%7D%0A%5Cfrac%7B1%7D%7B2%7D%28l-a%2B1%29%28l%2Ba%29+%3D+N%0A%5Cend%7Balign%2A%7D%0A)
+
 ここから以下のようになります。
-![\[
- (l-a+1)(l+a) = 2N
-\]
-](https://render.githubusercontent.com/render/math?math=%5Cdisplaystyle+%5C%5B%0A+%28l-a%2B1%29%28l%2Ba%29+%3D+2n%0A%5C%5D%0A)
-(l-a+1), (l+a)の差が2nになるので、
-とりあえず2Nを割り切れる数を求めてみましょう。
-ここで
-![\[
-n*m = 2N
-\]
-](https://render.githubusercontent.com/render/math?math=%5Cdisplaystyle+%5C%5B%0An%2Am+%3D+2N%0A%5C%5D%0A)
-とすると
-l-a+1 = n, l+a = m になります。
+  
+![\begin{align*}
+(l-a+1)(l+a) = 2N
+\end{align*}
+](https://render.githubusercontent.com/render/math?math=%5CLarge+%5Cdisplaystyle+%5Cbegin%7Balign%2A%7D%0A%28l-a%2B1%29%28l%2Ba%29+%3D+2N%0A%5Cend%7Balign%2A%7D%0A)
+(l-a+1), (l+a)の積が2Nになるので、
+(l-a+1) = i, (l+a) = jとすると
 2つの式の両辺を足すと2l = (n+m)-1になります。
-つまり、n*m = 2Nを満たすようなn, mのうち
-(n+m)-1が2で割り切れる場合に題意を満たします。
+つまり、i*j = 2Nを満たすようなi, jのうち
+(i+j)-1が2で割り切れる場合に題意を満たします。
 コードは以下のようになります。
 ```
 #include <bits/stdc++.h>
