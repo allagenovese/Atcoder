@@ -14,8 +14,8 @@
 ](https://render.githubusercontent.com/render/math?math=%5CLarge+%5Cdisplaystyle+%5Cbegin%7Balign%2A%7D%0A%28l-a%2B1%29%28l%2Ba%29+%3D+2N%0A%5Cend%7Balign%2A%7D%0A)
   
 (l-a+1), (l+a)の積が2Nになるので、
-(l-a+1) = i, (l+a) = jとすると
-2つの式の両辺を足すと2l = (n+m)-1になります。
+(l-a+1) = i, (l+a) = jとすると、
+2つの式の両辺を足して2l = (n+m)-1になります。
 つまり、i*j = 2Nを満たすようなi, jのうち
 (i+j)-1が2で割り切れる場合に題意を満たします。
 コードは以下のようになります。
